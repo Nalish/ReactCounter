@@ -8,11 +8,11 @@ export default function App(){
 const [count,setCount] =React.useState(0)
 
 function add(){
-  setCount(count +1)
+  setCount(prevcount => prevcount +1)
 }
 
 function Subtract(){
-  setCount(count -1)
+  setCount(prevcount => prevcount -1)
 }
 return(
   <div className="container">
